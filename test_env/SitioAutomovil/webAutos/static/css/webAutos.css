@@ -70,3 +70,9 @@ li a:hover {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.shadowtext {
+    text-shadow: 10px 7px 6px orange;
+    font-size: 40px;
+    font-weight: 550;
+}
