@@ -40,11 +40,11 @@
 <!--<button class ="button2">Regístrese acá</button>-->
 
 <br>
-    {% for post in posts %}
+    
     <table  border=1>
     <td>
+    {% for post in posts %}
     <div><h1><a>{{ post.titulo }}</a></h1></div>
-    
     <div>
         <p>Marca: {{ post.Marca}}</p>
         <p>Modelo: {{ post.Modelo}}</p>
@@ -56,13 +56,18 @@
         <p>Precio: {{ post.Precio|linebreaksbr }}</p>
         
         <button class="button">Cotizar precio</button>
+         {% endfor %}
     </div>
     </td>
+
+    
     <td>
-    <div id="flip"><h1><a>{{ post.titulo }}</a></h1></div>
+    <table id="tb">
+    
+    <div id="flip"><h1><a>Contacto</a></h1></div>
     
     <div id="panel">
-        <p>Marca: {{ post.Marca}}</p>
+        <p></p>
         <p>Modelo: {{ post.Modelo}}</p>
         <p>Año del automovil: {{ post.Año_automovil}}</p>
         <p>Color: {{ post.Color}}</p>
@@ -73,9 +78,10 @@
         
         <button class="button">Cotizar precio</button>
     </div>
+    </table>
     </td>
     </table>
-{% endfor %}
+
 
 
 </body>
