@@ -9,14 +9,14 @@ table {
 
 #panel, div#flip {
     padding-top: 5px;
-    text-align: left;
+    text-align: center;
     background-color: #ffffff;
     /*border: solid 1px #c3c3c3;*/
     width: 100%;
 }
 
 #panel {
-    padding: 10px;
+    padding-top: -10px;
     display: none; 
 }
 
@@ -78,6 +78,17 @@ li a:hover {
     font-size: 40px;
     font-weight: 550;
 }
+
+section{
+    width: 50%;
+    background-color: #333;
+}
+
+aside{
+    width: 50%;
+
+}
+
 
 /*
 

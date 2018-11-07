@@ -40,10 +40,9 @@
 <!--<button class ="button2">Regístrese acá</button>-->
 
 <br>
-    
-    <table  border=1>
-    <td>
+    <section>
     {% for post in posts %}
+
     <div><h1><a>{{ post.titulo }}</a></h1></div>
     <div>
         <p>Marca: {{ post.Marca}}</p>
@@ -58,12 +57,8 @@
         <button class="button">Cotizar precio</button>
          {% endfor %}
     </div>
-    </td>
-
-    
-    <td>
-    <table id="tb">
-    
+</section>
+<aside>
     <div id="flip"><h1><a>Contacto</a></h1></div>
     
     <div id="panel">
@@ -78,9 +73,7 @@
         
         <button class="button">Cotizar precio</button>
     </div>
-    </table>
-    </td>
-    </table>
+</aside>
 
 
 
