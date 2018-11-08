@@ -106,64 +106,18 @@ aside{
 */
 
 
-.informacion{
-    width: 100%;
-    float: left;
-}
-
-.informacion p{
-    width: 31.3%;
-    float: left;
-    font-weight: 600;
-    padding-left: 2%;
-    margin: 5px 0;
-}
-.informacion p:nth-child(2){
-   text-align: center;
-}
-
-.redes_sociales{
-    width: 23.3%;
-    float: left;
-    margin: 5px 5%;
-    padding-bottom: 30px;
-}
-
-.informacion .redes_sociales i{
-    color: #6dccaa;
-    background: white;
-    padding: 5px;
-    border-radius: 100%;
-    width: 19px;
-    text-align: center;
-}
-
-
 .info h1{
     margin: 30px 0 10px;
-    font-size: 20px;
+    font-size: 30px;
 }
-.info h2{
-    color: #808080;
-    margin: 10px 0;
-    font-size: 14px;
-}
+
 .info p{
     margin: 10px 0;
     font-size: 15px;
     line-height: 1.2;
     clear: both;
 }
-.info a{
-   text-decoration: none;
-   border: 2px solid black;
-   color: black;
-   padding: 6px;
-   float: left;
-   font-size: 14px;
-   font-weight: 600;
-   margin-top: 10px;
-}
+
 .info hr{
    width: 20%;
    border-bottom: 4px solid black;
@@ -184,27 +138,5 @@ aside{
    float: right;
    clear: both;
    margin: 20px 0;
-}
-
-.boton_personalizado{
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #000000;
-    background-color: rgb(255, 255, 255);
-    border-radius: 6px;
-    border: 3px solid #000000;
-    text-align: center;
-  }
-
-  footer{
-    background: #e6e6e6;
-}
-footer p{
-    font-size: 13px;
-    margin-left: 20px;
-    margin-top: 5px;
-    margin-bottom: 30px;
 }
 
