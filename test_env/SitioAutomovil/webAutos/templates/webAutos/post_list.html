@@ -21,27 +21,42 @@
             });
         });
         </script>
+    <script> 
+        $(document).ready(function(){
+            $("#foot").click(function(){
+                $("#footer").slideToggle("slow");
+            });
+        });
+        </script>
 </head>
 <body>
-    <header>
+<header>
         <nav>
             <div id="arriba"><h1 id="Log">Venta de Vehículos</h1></div>
         </nav>
+    </header>
         <ul>
             <li><a class="active" href="#home">Inicio</a></li>
-            <li><a href="#news">¿Quiénes somos?</a></li>
-            <li><a href="#contacto.html">Contacto</a></li>
+            <li id="foot"><a href="#footer">¿Quiénes somos?</a></li>
+            <li id="flip"><a>Contacto</a></div>
+            <br>
+            <div id="panel">
+                    <p>Correo electronico: AutosLocos@gmail.com</p>
+                    <p>Cel: 9 123 654 789</p>
+                    <p>Dirección: Los Aromos 6098-6000</p>
+                </div>
+            </li>
             
           </ul> 
-           <center>
-          <p class="shadowtext">Encuentre su auto indicado</p>
-           </center>
-    </header>
+
 
     
 <hr> <br>
+<center>
+    <p class="shadowtext">Encuentre su auto indicado</p>
+</center>
 
-<!--<button class ="button2">Regístrese acá</button>-->
+    
 
 <br>
     <section>
@@ -58,25 +73,12 @@
         <p>Fecha de publicación: {{ post.Fecha_publicacion }}</p>
         <p>Precio: {{ post.Precio|linebreaksbr }}</p>
         
-        <button class="button">Cotizar precio</button>
+    <!--<button class="button">Cotizar precio</button>-->
          {% endfor %}
     </div>
 </section>
 <aside>
-    <div id="flip"><h1><a>Contacto</a></h1></div>
-    
-    <div id="panel">
-        <p></p>
-        <p>Modelo: {{ post.Modelo}}</p>
-        <p>Año del automovil: {{ post.Año_automovil}}</p>
-        <p>Color: {{ post.Color}}</p>
-        <p>Numero de puertas: {{ post.Numero_puertas}}</p>
-        <p>Descripcion: {{ post.Descripcion}}</p>
-        <p>Fecha de publicación: {{ post.Fecha_publicacion }}</p>
-        <p>Precio: {{ post.Precio|linebreaksbr }}</p>
-        
-        <button class="button">Cotizar precio</button>
-    </div>
+
 </aside>
 
 <div class="row info">
@@ -96,7 +98,15 @@
              con menos obstáculos.</p>
         </div>
     </div>
-
+<div id="footer">
+        <p>Quienes somos</p>
+    <p>sitio de venta de vehículos más visitado de Chile, 
+        que comenzó a operar en Noviembre del 2018.
+        Durante los primeros días, los socios del sitio se dedicaron a generar una plataforma tecnológica sólida, así como los cientos y
+        posteriormente miles de visitas que comenzaron a tener diariamente.</p>
+        <p>Con constancia y perseverancia, las automotoras creyeron en este proyecto, colocando sus vehículos a la venta también a través del portal, 
+            lo cual le daría el impulso al sitio web para hacer crecer el equipo de trabajo y desarrollar una plataforma cada vez más robusta.</p>
+</div>
 <br><br>
 
 
